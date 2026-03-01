@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Long Property Management | Erie, PA</title>
+  <meta name="description" content="Contact Long Property Management for a free rental assessment. Owner-first property management in Erie, PA.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="site-header__logo">Long Property Management</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <nav class="site-header__nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="maintenance.html">Maintenance Rules</a>
+        <a href="proof.html">Our Work</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="site-header__cta">
+        <a href="#contact-form" class="btn btn--primary-on-dark btn--sm">Get Free Rental Assessment</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Get a free rental assessment</h1>
+      <p>Tell us about your property. We'll reply with a rent range, scope fit, and next steps within one business day.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--2" style="gap: 64px; align-items: start;">
+
+        <!-- FORM -->
+        <div id="contact-form">
+          <h2 class="mb-3">Send your assessment request</h2>
+
+          <form class="lead-form lead-form--light" id="assessment-form" novalidate>
+            <div class="form-group">
+              <label for="form-name">Name</label>
+              <input type="text" id="form-name" name="name" autocomplete="name" required>
+              <span class="form-error" id="error-name">Please enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-phone">Phone</label>
+              <input type="tel" id="form-phone" name="phone" autocomplete="tel" required>
+              <span class="form-error" id="error-phone">Please enter a valid phone number (10 digits).</span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" id="form-email" name="email" autocomplete="email" required>
+              <span class="form-error" id="error-email">Please enter a valid email.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-units">Number of units</label>
+              <select id="form-units" name="units" required>
+                <option value="" disabled selected>Select</option>
+                <option value="1">1</option>
+                <option value="2-4">2&ndash;4</option>
+                <option value="5+">5+</option>
+              </select>
+              <span class="form-error" id="error-units">Please select unit count.</span>
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="form-address">Property address</label>
+              <input type="text" id="form-address" name="address" autocomplete="street-address" required>
+              <span class="form-error" id="error-address">Please enter the property address.</span>
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="form-notes">Notes (optional)</label>
+              <textarea id="form-notes" name="notes" rows="3" maxlength="250" style="resize: vertical;"></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn--primary">Send My Assessment Request</button>
+              <p class="fineprint mt-1">We respond within one business day. No spam&mdash;just a quick owner call.</p>
+            </div>
+          </form>
+
+          <div class="form-success" id="form-success" style="padding: var(--space-5) 0;">
+            <h3 style="color: var(--color-black);">Request received.</h3>
+            <p style="color: var(--color-text-secondary);">We'll call within one business day. If you prefer, call us now at <a href="tel:+18145551212" style="color: var(--color-black); font-weight: 600;">(814) 555-1212</a>.</p>
+          </div>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div>
+          <h2 class="mb-3">Or reach us directly</h2>
+
+          <div style="display: flex; flex-direction: column; gap: 24px;">
+            <div>
+              <h3>Phone</h3>
+              <p class="mt-1"><a href="tel:+18145551212" style="font-size: 20px; font-weight: 600; color: var(--color-black);">(814) 555-1212</a></p>
+            </div>
+
+            <div>
+              <h3>Email</h3>
+              <p class="mt-1"><a href="mailto:info@longpropertymanagement.com" style="font-size: 17px; color: var(--color-black);">info@longpropertymanagement.com</a></p>
+            </div>
+
+            <div>
+              <h3>Service area</h3>
+              <p class="mt-1 text-secondary">Erie, PA and surrounding communities including Millcreek, Harborcreek, and Fairview.</p>
+            </div>
+
+            <div>
+              <h3>Response time</h3>
+              <p class="mt-1 text-secondary">We respond to owner inquiries within one business day. For urgent property issues, call directly.</p>
+            </div>
+
+            <div style="padding: 24px; background: var(--color-surface); border-radius: 16px; margin-top: 8px;">
+              <h3 class="mb-1">What happens next?</h3>
+              <ol style="display: flex; flex-direction: column; gap: 12px; counter-reset: next-step;">
+                <li style="display: flex; align-items: flex-start; gap: 12px; font-size: 16px; line-height: 1.5; color: var(--color-text-secondary);">
+                  <strong style="color: var(--color-black);">1.</strong> We review your property details
+                </li>
+                <li style="display: flex; align-items: flex-start; gap: 12px; font-size: 16px; line-height: 1.5; color: var(--color-text-secondary);">
+                  <strong style="color: var(--color-black);">2.</strong> We call to discuss scope, pricing, and your goals
+                </li>
+                <li style="display: flex; align-items: flex-start; gap: 12px; font-size: 16px; line-height: 1.5; color: var(--color-text-secondary);">
+                  <strong style="color: var(--color-black);">3.</strong> On-site or virtual property assessment
+                </li>
+                <li style="display: flex; align-items: flex-start; gap: 12px; font-size: 16px; line-height: 1.5; color: var(--color-text-secondary);">
+                  <strong style="color: var(--color-black);">4.</strong> Proposal with clear terms, fees, and maintenance rules
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__brand">
+        <strong>Long Property Management</strong>
+        <p>Owner-first property management with built-in maintenance for Erie, PA rentals.</p>
+        <p class="mt-2">(814) 555-1212 &bull; info@longpropertymanagement.com</p>
+      </div>
+      <div class="site-footer__links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pricing.html">Pricing &amp; Policies</a></li>
+          <li><a href="maintenance.html">Maintenance Rules</a></li>
+          <li><a href="proof.html">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__links">
+        <h4>Service Area</h4>
+        <ul>
+          <li><a href="#">Erie, PA</a></li>
+          <li><a href="#">Millcreek, PA</a></li>
+          <li><a href="#">Harborcreek, PA</a></li>
+          <li><a href="#">Fairview, PA</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__bottom">
+        <p>&copy; 2026 Long Property Management. All rights reserved.</p>
+        <p><small>Tenants: please contact your landlord directly.</small></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta-bar">
+    <div class="container">
+      <a href="tel:+18145551212" class="btn btn--secondary-on-dark" data-track="call_click">Call</a>
+      <a href="#contact-form" class="btn btn--primary-on-dark" data-track="cta_click_assessment">Get Assessment</a>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
