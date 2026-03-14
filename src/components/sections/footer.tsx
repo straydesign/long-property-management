@@ -62,6 +62,19 @@ export function Footer() {
           <div className="w-full pt-6 mt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center flex-wrap gap-4 text-sm">
             <p>&copy; 2026 Long Property Management. All rights reserved.</p>
             <div className="flex items-center gap-4">
+              <p>
+                <small>
+                  Built by{" "}
+                  <a
+                    href="https://straywebdesign.co"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/40 hover:text-white transition-colors duration-150 no-underline"
+                  >
+                    Stray Web Design
+                  </a>
+                </small>
+              </p>
               <p><small>Tenants: please contact your landlord directly.</small></p>
               <motion.a
                 href="#hero"
